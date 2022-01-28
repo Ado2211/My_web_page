@@ -1,12 +1,13 @@
 html {
-    scroll-behavior: smooth;
-
+    line-height: 1.75em;
+    scroll-behavior: smooth;  
 }
 
 body {
-    font-family: Calibri, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0px;
     padding: 0px;
+    color: rgb(156, 48, 48);
 }
 
 .custom-shape-divider-bottom-1643060170 {
@@ -122,20 +123,21 @@ h1 {
     background-color: #fafafa;
     text-align: center;
     margin-left: 5%;
-   
-    
+
+
 }
-.square >img {
+
+.square>img {
     margin-bottom: -20px;
 }
 
 #squares {
     margin-top: 100px;
     margin-left: 18%;
-    margin-right: 18%; 
+    margin-right: 18%;
 }
 
-.square > p {
+.square>p {
     color: rgb(126, 125, 125);
 }
 
@@ -179,7 +181,6 @@ h1 {
     #header-home {
         background: linear-gradient(150deg, #281483 15%, #8f6ed5 75%, #d782d9 94%);
         height: 97vh;
-
     }
 }
 
@@ -189,7 +190,7 @@ h1 {
     display: flex;
     margin-left: 10%;
     margin-bottom: 60px;
-
+    transition: 0.5s;
 }
 
 .about {
@@ -200,6 +201,7 @@ h1 {
 .feature>img {
     width: 50px;
     height: 50px;
+    transition: 1s;
 }
 
 .about>p {
@@ -213,7 +215,7 @@ h4 {
     margin-bottom: -2px;
 }
 
-.naslov > p {
+.naslov>p {
     color: rgb(126, 125, 125);
     font-size: 18px;
 }
@@ -224,13 +226,104 @@ h4 {
 }
 
 #features {
-   display: flex;
-   margin-top: 100px;
-   justify-content: space-between;
-   margin-right: 20%;
-   margin-left: 20%;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
-.features-right {
-    
+.feature:hover img {
+    border-radius: 100%;
+    transition: 1s;
+}
+
+.youtube_video {
+    background: linear-gradient(150deg, #281483 15%, #8f6ed5 75%, #d782d9 94%);
+    height: 50vh;
+    position: relative;
+    text-align: center;
+}
+
+.custom-shape-divider-down-1643060170 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-down-1643060170 svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 200px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-down-1643060170 .shape-fill {
+    fill: #fff;
+}
+
+#youtube_play {
+    background: url(assets/youtube_play.jpg);
+    width: 70px;
+    height: 70px;
+    margin-left: 48%;
+    margin-top: 5%;
+    position: absolute;
+    border-radius: 50%;
+    animation: water-shadow 1s linear infinite;
+    transition: .5s linear;
+    cursor: pointer;
+}
+
+@keyframes water-shadow {
+
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgb(255 255 255 / 10%), 0 0 0 20px rgb(255 255 255 / 10%), 0 0 0 40px rgb(255 255 255 / 10%);
+        box-shadow: 0 0 0 0 rgb(255 255 255 / 10%), 0 0 0 20px rgb(255 255 255 / 10%), 0 0 0 40px rgb(255 255 255 / 10%);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgb(255 255 255 / 10%), 0 0 0 40px rgb(255 255 255 / 10%), 0 0 0 60px rgb(255 255 255 / 0%);
+        box-shadow: 0 0 0 20px rgb(255 255 255 / 10%), 0 0 0 40px rgb(255 255 255 / 10%), 0 0 0 60px rgb(255 255 255 / 0%);
+    }
+}
+
+#youtube_play:hover {
+    background: url(assets/youtube_pressed.jpg);
+}
+
+#naslov_pricing {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 22px;
+
+}
+
+#naslov_pricing>p {
+    color: rgb(126, 125, 125);
+    font-size: 18px;
+}
+
+.pricings {
+    margin-top: 70px;
+    margin-left: 25%;
+    margin-right: 15%;
+    display: grid;
+    grid-auto-flow: column; 
+}
+
+.price {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.price strong {
+    font-size: 40px;
 }
