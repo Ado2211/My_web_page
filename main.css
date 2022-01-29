@@ -353,13 +353,13 @@ h4 {
     margin-top: 30px;
     padding: 10px 30px;
     border-radius: 5px;
-    color: rgb(76, 2, 136);
+    color: rgb(40 20 131);
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
 
 #purchase:hover {
-    background-color: rgb(22, 2, 136);
+    background-color: rgb(40 20 131);
     color: white;
 }
 
@@ -368,3 +368,76 @@ h4 {
     top: -10px;
     transition: all 0.3s ease-in;
 }
+
+#contact {
+    margin-top: 270px;
+    margin-left: 18%;
+    display: flex;    
+}
+
+#contact h2 {
+    font-size: 28px;
+}
+
+#contact p {
+    font-size: 14px;
+}
+
+.inputs {
+    
+    margin-top: -100px;
+    color:rgb(126, 125, 125);
+}
+
+.inputs h3 {
+    color:rgb(68, 68, 68)
+}
+
+.all_inputs input {
+    margin: 3%;
+    border: none;
+}
+
+.inputs { 
+   position: relative;
+   margin-right: 25%;  
+}
+
+.about {
+   width: 60%;
+   height: auto;
+}
+
+.send_message {
+   width: 30%;
+    height: 40px;
+  margin-top: 20%;
+  margin-left: 70%;
+border-radius: 4px;
+font-size: 16px;
+background-color:rgb(40 20 131);
+color: white;
+border: 2px solid rgb(40 20 131);
+cursor: pointer;
+}
+
+.send_message:hover {
+    background-color: white;
+    color:rgb(40 20 131);
+}
+
+.footer {
+    margin-top: 170px;
+    margin-bottom: 70px;
+    display: block;
+    text-align: center; 
+}
+
+.footer p {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color:rgb(122, 120, 120)
+}
+
+
+
