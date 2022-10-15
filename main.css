@@ -7,7 +7,7 @@ body {
     font-family: Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-    color: rgb(68, 68, 68)
+    color: rgb(68, 68, 68);
 }
 
 .custom-shape-divider-bottom-1643060170 {
@@ -58,10 +58,13 @@ body {
     font-size: 18px;
     color: white;
     margin-top: 30px;
+    transition: 0.5s
 }
 
 #main-menu a:hover {
-    color: rgb(122, 120, 120);
+    color:rgb(173, 171, 171);
+    font-size: 22px;
+    transition: 0.5s;
 }
 
 .column {
@@ -128,20 +131,22 @@ h1 {
 
 .square>img {
     margin-bottom: -20px;
+    margin-top: 10px;
 }
 
 #squares {
     margin-top: 100px;
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .square>p {
     color: rgb(126, 125, 125);
+    font-size: 14px;
 }
 
 .square h2 {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 @media (max-width: 1200px) {
@@ -229,8 +234,8 @@ h4 {
     display: flex;
     margin-top: 100px;
     justify-content: space-between;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 13%;
+    margin-left: 13%;
 }
 
 .feature:hover img {
@@ -308,8 +313,8 @@ h4 {
 
 .pricings {
     margin-top: 70px;
-    margin-left: 25%;
-    margin-right: 15%;
+    margin-left: 18%;
+    margin-right: 7%;
     display: grid;
     grid-auto-flow: column;
 }
@@ -318,6 +323,7 @@ h4 {
     width: 200px;
     height: 300px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .price h2 {
@@ -329,6 +335,7 @@ h4 {
     font-size: 60px;
     color: rgb(126, 125, 125);
     margin-top: 60px;
+    transition: 0.5s;
 }
 
 .cijena {
@@ -338,12 +345,12 @@ h4 {
 
 .cijena>b {
     position: relative;
-    top: -26px;
+    top: -20px;
 }
 
 .cijena>div {
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #purchase {
@@ -361,18 +368,32 @@ h4 {
 #purchase:hover {
     background-color: rgb(40 20 131);
     color: white;
+    font-size: 22px;
+}
+
+.cijena {
+    transition: 0.5s
+}
+.price>div>span:hover {
+    font-size: 80px;
+    transition: 0.5s;
+}
+
+.cijena:hoer {
+    font-size: 36px;
+    transition: 0.5s;
 }
 
 .price:hover {
     position: relative;
-    top: -10px;
     transition: all 0.3s ease-in;
 }
 
 #contact {
-    margin-top: 270px;
+    margin-top: 130px;
     margin-left: 18%;
-    display: flex;    
+    display: inline-flex;
+    align-items: center;
 }
 
 #contact h2 {
@@ -384,60 +405,71 @@ h4 {
 }
 
 .inputs {
-    
-    margin-top: -100px;
-    color:rgb(126, 125, 125);
+ color: rgb(126, 125, 125);
 }
 
 .inputs h3 {
-    color:rgb(68, 68, 68)
+    color: rgb(68, 68, 68)
 }
 
-.all_inputs input {
+.all_inputs>input {
     margin: 3%;
-    border: none;
+    border: 1px solid rgb(40 20 131);
 }
 
-.inputs { 
-   position: relative;
-   margin-right: 25%;  
+.all_inputs>textarea {
+    border: 1px solid rgb(40 20 131);
 }
 
-.about {
-   width: 60%;
-   height: auto;
+.inputs {
+    position: relative;
+    margin-right: 13%;
+    margin-left: 10%;
+}
+
+#message {
+    margin-left: 14px;
+    width: 169px;
+}
+.about_contact {
+    width: 60%;
+    height: auto;
+}
+
+.right_inputs {
+    display: inline-block;
+    margin-left: 80px;
 }
 
 .send_message {
-   width: 30%;
+    width: 30%;
     height: 40px;
-  margin-top: 20%;
-  margin-left: 70%;
-border-radius: 4px;
-font-size: 16px;
-background-color:rgb(40 20 131);
-color: white;
-border: 2px solid rgb(40 20 131);
-cursor: pointer;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    color: rgb(40 20 131);
+    border: 2px solid rgb(40 20 131);
+    cursor: pointer;
+    margin-left: 14px;
 }
 
 .send_message:hover {
-    background-color: white;
-    color:rgb(40 20 131);
+    background-color: rgb(40 20 131);
+    color: white;
 }
 
 .footer {
     margin-top: 170px;
-    margin-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 70px;
     display: block;
-    text-align: center; 
+    text-align: center;
+    background-color: #f9f9f9;
 }
 
 .footer p {
     font-size: 12px;
     letter-spacing: 0.5px;
-    color:rgb(122, 120, 120)
+    color: #302f2f;
 }
-
-
-
